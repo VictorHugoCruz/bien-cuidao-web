@@ -21,11 +21,11 @@ const Typography = createGlobalStyle`
   }
   html{
     font-family: 'RobotoMono Regular';
-    color: var(--gray-1);
+    color: var(--primary-dark);
   }
   *{
     font-family: 'RobotoMono Regular';
-    color: var(--gray-1);
+    color: var(--primary-dark);
   }
   h1,h2,h3,h4,h5,h6{
     font-family: 'Montserrat SemiBold'

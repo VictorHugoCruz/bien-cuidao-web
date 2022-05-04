@@ -25,7 +25,7 @@ export default function Boton({
   btnText='test',
   outline= false}) {
   return (
-    <BotonStyle outline={outline}>
+    <BotonStyle outline={outline} className='button-wrapper'>
       <Link 
         className='button'
         to={btnLink}

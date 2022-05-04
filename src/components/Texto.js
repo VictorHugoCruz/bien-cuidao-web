@@ -5,14 +5,14 @@ const PStyle = styledComponents.div`
   max-width: 500px;
   margin: 0 auto;
   font-size: 1.8rem;
-  line-height: 1.3rem;
+  line-height: 1.6rem;
   @media only screen and (max-width: 768px){
     font-size: 1.4rem;
   }
 `
 export default function Texto({ children }) {
   return (
-    <PStyle>
+    <PStyle className='parrafo'>
       <p>
         {children}
       </p>
