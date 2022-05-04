@@ -71,14 +71,21 @@ const NavMenuStyles = styled.nav`
       cursor: pointer;
       display: none;
       outline: none;
+      
       *{
         pointer-events:none;
+        color: var(--white);
       }
     }
 
     .closeNavIcon{
       display: none;
+      *{
+        color: var(--white);
+      }
     }
+
+    
     @media only screen and (max-width: 900px){
       img{
         display: none;
@@ -149,7 +156,7 @@ function NavMenu() {
           onKeyDown={()=>setShowNav(!showNav)}
           tabIndex={0}
         >
-          <MdMenu />
+          <MdMenu/>
         </div>
         <div className='nav-container-element'>
           <ul className={!showNav? 'navItems hide-item': 'navItems'}>
@@ -159,7 +166,7 @@ function NavMenu() {
               onKeyDown={()=>setShowNav(!showNav)}
               tabIndex={0}
             >
-              <MdClose />
+              <MdClose/>
             </div>
             <li>
               <NavLink to='/'
